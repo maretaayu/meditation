@@ -11,7 +11,7 @@
   --background: #181818;
 }
 body {
-  background-color: var(--background);
+  background-color: pink;
 }
 body,
 p {
