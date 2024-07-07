@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary: #2eb5c0;
+  --secondary: #f9f9f9;
+  --tertiary: #f3f3f3;
+  --border: #e0e0e0;
+  --text: #333;
+  --invert: #fff;
+  --card: #2a2a2a;
+  --background: #181818;
+}
+body {
+  background-color: var(--background);
+}
+body,
+p {
+  margin: 0 !important;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-invert {
+  color: var(--invert);
+}
+.page-center {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+.hero {
+  background-image: url("asset/bghero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4rem;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+
+.hero-profile {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: var(--invert);
+}
+.hero-profile img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.hero-content {
+  display: grid;
+  gap: 12px;
+}
+p {
+  font-size: 1rem;
+}
+
+/* section play  */
+.card-content {
+  background-color: var(--card);
+  padding: 12px 16px;
+  margin-top: -8px;
+  color: var(--invert);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.card img {
+  border-top-left-radius: 16px;
+  width: 100%;
+  border-top-right-radius: 16px;
+}
+
+.play-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* desktop */
+@media (min-width: 768px) {
+  .play-group {
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 12px;
+  }
+}
+
+/* mobile  */
+@media (max-width: 768px) {
+  .play-group {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    gap: 12px;
+  }
+}
+
+a.btn-cta {
+  background-color: var(--primary);
+  color: var(--invert);
+  padding: 12px;
+  border-radius: 32px;
+  text-decoration: none;
+}

@@ -1,1 +1,61 @@
-<p>hello world</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="hero-profile">
+        <img src="asset/profile.png" alt="Profile User" />
+        <div class="hero-content">
+          <p>Good Evening</p>
+          <p><b>Mareta!</b></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="play">
+      <div class="page-center">
+        <h2 class="text-invert">Recently Played</h2>
+        <div class="play-group">
+          <div class="card">
+            <img src="asset/thumbnail.png" alt="Play" loading="lazy" />
+            <div class="card-content">
+              <p id="demo">Daily Calm</p>
+              <p>10 min</p>
+
+              <button onclick="myFunction()">click here</button>
+              <a href="google.com" class="btn-cta">click here</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="asset/thumbnail.png" alt="Play" />
+            <div class="card-content">
+              <p>Daily Calm</p>
+              <p>10 min</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="asset/thumbnail.png" alt="Play" />
+            <div class="card-content">
+              <p>Daily Calm</p>
+              <p>10 min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello World";
+      }
+    </script>
+    <script src="js.js"></script>
+  </body>
+</html>
